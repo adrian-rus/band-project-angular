@@ -20,9 +20,6 @@ $(document).ready(function(){
     $('.preview').toggleClass('show');
      })
 
-    $('.home').click(function(){
-      $(this).addClass('active');
-    })
-});
+  });
 
 

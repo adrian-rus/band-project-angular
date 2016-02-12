@@ -4,7 +4,7 @@ angular.module('bandControllers',[])
 .controller('HomeController',function($scope) {
 
    $scope.title = 'Home';  
-   
+
 })
 .controller('BandController',function($scope) {
 
@@ -42,5 +42,9 @@ angular.module('bandControllers',[])
 
 //declaring footer controller
 .controller('FooterController',function($scope){
+  $scope.title='';
+})
+
+.controller('SongsController', function($scope){
   $scope.title='';
 });

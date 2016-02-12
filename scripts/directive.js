@@ -16,4 +16,13 @@ angular.module('bandDirectives',[])
     },
     templateUrl: 'templates/directives/footer.html'
   }
+})
+.directive('albumSongs', function(){
+  return{
+    restrict: 'E',
+    scope:{
+      song: '=song'
+    },
+    templateUrl: 'templates/directives/songs.html'
+  }
 });
