@@ -16,13 +16,4 @@ angular.module('bandDirectives',[])
     },
     templateUrl: 'templates/directives/footer.html'
   }
-})
-.directive('bandFooter', function(){
-  return {
-    restrict: 'E',
-    scope:{
-      band: '=home'
-    },
-    templateUrl: 'templates/home.html'
-  }
 });

@@ -18,6 +18,11 @@ angular.module('bandApp', ['ngRoute','bandControllers','bandDirectives',])
 		  	controller: 'ContactController'
 		  })
 
+		  .when('/band', {
+		  	templateUrl: 'templates/band.html',
+		  	controller: 'ContactController'
+		  })
+
 		  .when('/gigs', {
 		  	templateUrl: 'templates/gigs.html',
 			controller: 'GigsController'
