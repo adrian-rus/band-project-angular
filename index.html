@@ -3,12 +3,18 @@
 <head>
 	<title>The Super Jays Band</title>
 	<meta charset="UTF-8">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!--loading css styling-->
 	<link rel="stylesheet" type="text/css" href='bootstrap/css/bootstrap.min.css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="scripts/main.js"></script>
+
+<!--loading jQuery, Bootstrap and AngularJS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src='bootstrap/js/bootstrap.min.js'></script>
+    <script src="scripts/vendor/angular.min.js"></script>
+    <script src="scripts/vendor/angular-route.min.js"></script>
 	
 </head>
 <body>
@@ -16,10 +22,8 @@
 	<div ng-view>
 	</div>
 	<band-footer></band-footer>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-   <script src='bootstrap/js/bootstrap.min.js'></script>
-   <script src="scripts/vendor/angular.min.js"></script>
-   <script src="scripts/vendor/angular-route.min.js"></script>
+
+<!--loading application JavaScripts-->
    <script src='scripts/main.js'></script>
    <script src="scripts/app.js"></script>
    <script src="scripts/controller.js"></script>

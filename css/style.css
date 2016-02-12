@@ -1,4 +1,5 @@
-div{
+/*setting the defaults for the page*/
+html{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-ms-box-sizing:border-box;
@@ -7,6 +8,7 @@ div{
 	padding:0;
 }
 
+/*General styling*/
 body{
 		font: 400 15px/1.8 "Open Sans","Lato", "cursive", sans-serif;
 		background-color: black;
@@ -35,50 +37,24 @@ input[type=text], input[type=number]{
 input[type=text]:focus, input[type=number]:focus{
 	border:2px solid #AAEE46;
 	background-color: #6b585b;
+	color: #fff;
 }
 
-.carousel-indicators{
-	list-style: square !important;
-}
-.carousel-inner img{
-	-webkit-filter:grayscale(90%);
-	filter: grayscale(90%);
-	width: 100%;
-	margin:auto;
-}
-.carouselm{
-	height: 350px;
-	width: 350px;
+/*styling div containers and fonts*/
+.container{
+	padding: 80px 120px;
 }
 
-.carouselm h3,p{
-	background-color: #000 !important;
-	opacity: .8;
-	border-radius: 10px;
-}
-.album-list {
-	display: inline-block;
-	padding: 10px;
-	text-align: top center;
-	vertical-align: center;
-}
-}
-.img-circle{
-	-webkit-filter:grayscale(80%);
-	filter: grayscale(80%);
+.td1{
+	background:black;
+	color:#DCCCE8;
 }
 
-#comments{
-	background-color: #DCCCE8;
-
+.td1 p{
+	font-style: italic;
 }
 
-#comments:focus{
-	background-color: #6b585b;
-	border: 2px solid #AAEE46;
-
-}
-
+/*styling the navigation bar*/
 .navbar, .navbar-default, .navbar-fixed-top{
 		border-radius: 0;
 		font-weight: bold;
@@ -111,71 +87,36 @@ input[type=text]:focus, input[type=number]:focus{
 	color: #AAEE46 !important;
 }
 
+/*styling home page carousel*/
 .carousel-caption h3{
 	color: #AAEE46 !important;
 }
-
-.container{
-	padding: 80px 120px;
+.carousel-inner img{
+	-webkit-filter:grayscale(90%);
+	filter: grayscale(90%);
+	width: 100%;
+	margin:auto;
 }
 
-.name{
-	opacity:0.8;
-	border: solid transparent 8px;
-	height:200px;
-	width:150px;
+/*styling music page carousel*/
+.carouselm{
+	height: 350px;
+	width: 350px;
 }
 
-.name:hover{
-	border-color:#9E868C;
+.carouselm h3,p{
+	background-color: #000 !important;
+	opacity: .8;
+	border-radius: 10px;
 }
 
-.preview {
-	display:none;
+/*styling albums*/
+.album-list {
+	display: inline-block;
+	padding: 10px;
+	text-align: top center;
+	vertical-align: center;
 }
-
-.glyphicon-shopping-cart{
-	height:20px;
-	width:20px;
-}
-
-.td1{
-	background:black;
-	color:#DCCCE8;
-}
-
-.td1 p{
-	font-style: italic;
-}
-
-.btn{
-	padding: 10px 20px;
-	background-color: #6b585b;
-	color: black;
-	border-radius: 0;
-}
-
-.btn:hover, .btn:focus{
-	border:1px solid #333;
-	background-color: #DCCCE8;
-	color:#000;
-}
-
-/*#search-bar{
-	display: none;
-}
-
-#search-bar a{
-	padding: 10;
-	margin:0;
-}
-
-#search-bar input[type=text]{
-	background-color: #DCCCE8 !important;
-
-}*/
-
-
 
 #play1, #play2, #play3, #play4{
 	display: none;
@@ -200,8 +141,82 @@ input[type=text]:focus, input[type=number]:focus{
 
 }
 
-.thumbnail{
+/*styling band memebers photos*/
+.img-circle{
+	-webkit-filter:grayscale(80%);
+	filter: grayscale(80%);
+	height: 250px;
+	width: 250px;
+}
+
+/*styling band members profile description*/
+.name{
+	opacity:0.8;
+	border: solid transparent 8px;
+	height:200px;
+	width:150px;
+}
+
+.name:hover{
+	border-color:#9E868C;
+}
+
+.preview {
+	display:none;
+}
+
+/*styling comments section on contact page*/
+#comments{
+	background-color: #DCCCE8;
+	color: #fff;
+
+}
+
+#comments:focus{
+	background-color: #6b585b;
+	border: 2px solid #AAEE46;
+	color: #fff;
+
+}
+
+.glyphicon-shopping-cart{
+	height:20px;
+	width:20px;
+}
+
+/*gigs page button styling*/
+
+.btn{
+	padding: 10px 20px;
+	background-color: #6b585b;
+	color: black;
+	border-radius: 0;
+}
+
+.btn:hover, .btn:focus{
+	border:1px solid #333;
+	background-color: #DCCCE8;
+	color:#000;
+}
+
+/*old version styling:
+
+#search-bar{
+	display: none;
+}
+
+#search-bar a{
+	padding: 10;
+	margin:0;
+}
+
+#search-bar input[type=text]{
+	background-color: #DCCCE8 !important;
+
+}*/
+
+/*.thumbnail{
 	background-color: #DCCCE8;
 	color:black;
 
-}
+}*/
