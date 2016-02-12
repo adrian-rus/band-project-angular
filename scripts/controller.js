@@ -4,6 +4,7 @@ angular.module('bandControllers',[])
 .controller('HomeController',function($scope) {
 
    $scope.title = 'Home';  
+   
 })
 .controller('BandController',function($scope) {
 

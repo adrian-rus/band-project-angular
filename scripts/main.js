@@ -1,10 +1,6 @@
 $(document).ready(function(){ 
     
-    $('#search-btn').click(function(){
-      $('#search-bar').show();
-   });
-
-    $('#show-play1').click(function(){ //how can i display only one at a time?
+       $('#show-play1').click(function(){ 
       $('#play1').toggleClass('show');
     });
 
@@ -23,6 +19,10 @@ $(document).ready(function(){
     $('.name').click(function(){
     $('.preview').toggleClass('show');
      })
+
+    $('.home').click(function(){
+      $(this).addClass('active');
+    })
 });
 
 
